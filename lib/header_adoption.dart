@@ -24,7 +24,7 @@ class HeaderAdoption extends StatelessWidget{
       height: 40.0,
       child: Icon(
         Icons.menu,
-        color: Colors.deepPurpleAccent,
+        color: Color(0xFF564D80),
       ),
     );
 
@@ -56,7 +56,7 @@ class HeaderAdoption extends StatelessWidget{
           ),
           child: Icon(
             Icons.location_on,
-            color: Colors.deepPurpleAccent,//Color(0xFFf2C611),
+            color: Color(0xFF564D80)//Colors.deepPurpleAccent
           )
         ),
 
@@ -72,7 +72,7 @@ class HeaderAdoption extends StatelessWidget{
             style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.bold,
-                color: Colors.deepPurpleAccent
+                color: Color(0xFF564D80)//Colors.deepPurpleAccent
             ),
           ),
         ),
@@ -89,7 +89,7 @@ class HeaderAdoption extends StatelessWidget{
             style: TextStyle(
                 fontSize: 16.0,
                 //fontWeight: FontWeight.bold,
-                color: Colors.deepPurpleAccent
+                color: Color(0xFF564D80)//Colors.deepPurpleAccent
             ),
           ),
         )
@@ -107,7 +107,7 @@ class HeaderAdoption extends StatelessWidget{
             //left: 20.0
           ),
           child: Text(
-            '$header_message, $phone_height',
+            '$header_message',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 14.0,

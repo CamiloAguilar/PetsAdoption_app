@@ -9,16 +9,16 @@ class GradientBack extends StatelessWidget{
     double phone_height = MediaQuery.of(context).size.height.floorToDouble();
 
     final background = Container(
-      height: phone_height - 190,
+      height: phone_height - 110,
       margin: EdgeInsets.only(
-        top: 190
+        top: 120
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(30.0),
           topRight: Radius.circular(30.0)
         ),
-        color: Colors.deepPurple
+        color: Color(0xFFEFEFEF)
       ),
     );
 
