@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'header_adoption.dart';
+import 'body_content.dart';
+import 'pet_category_list.dart';
+import 'pet_review_list.dart';
 import 'gradient_back.dart';
 
 void main() => runApp(MyApp());
@@ -26,12 +29,26 @@ class MyApp extends StatelessWidget {
         body: Stack(
           children: <Widget>[
             GradientBack(),
-            Column(
+            Stack(
               children: <Widget>[
-                HeaderAdoption(),
-
+  //            BodyContent(),
+                ListView(
+                  children: <Widget>[
+                    PetCategoryList(),
+                    PetReviewList()
+  //                BodyContent()
+                  ],
+                ),
+      //            HeaderAdoption(),
+                Column(
+                  children: <Widget>[
+                    HeaderAdoption(),
+                  ],
+                )
               ],
-            )
+            ),
+
+//            GradientBack()
           ],
         )
       ),

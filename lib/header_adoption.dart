@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
+import 'gradient_back.dart';
 
 class HeaderAdoption extends StatelessWidget{
+
+  String header_message = 'Location';
+  String userCity = 'Zipaquirá';
+  String userCountry = 'Colombia';
+
+  String userPhoto_path = 'assets/img/Rumi.jpg';
+  double hskip = 25.0;
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    String header_message = 'Location';
-    String userCity = 'Zipaquirá';
-    String userCountry = 'Colombia';
-    double pixels_text = (userCity.length.toDouble() + userCountry.length.toDouble()) * 5;
-    String userPhoto_path = 'assets/img/Rumi.jpg';
+    double pixels_text = (userCity.length.toDouble() + userCountry.length.toDouble()) * 5.0;
     double phone_width = MediaQuery.of(context).size.width.floorToDouble();
-    double phone_height = MediaQuery.of(context).size.height;
-
+    //double phone_height = MediaQuery.of(context).size.height;
 
     final menu_icon = Container(
       margin: EdgeInsets.only(
-          top: 35.0,
+          top: 35.0 + hskip,
           //left: 10.0
       ),
       width: 10.0,
@@ -30,7 +33,7 @@ class HeaderAdoption extends StatelessWidget{
 
     final userPhoto = Container(
       margin: EdgeInsets.only(
-          top: 35.0,
+          top: 35.0 + hskip,
           //left: 20.0
       ),
 
@@ -103,7 +106,7 @@ class HeaderAdoption extends StatelessWidget{
         Container(
           width: phone_width - 110,
           margin: EdgeInsets.only(
-            top: 30.0,
+            top: 30.0 + hskip,
             //left: 20.0
           ),
           child: Text(
